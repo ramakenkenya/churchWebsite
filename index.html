@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Church Website Header</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+
+
+<body>
+    <header class="header">
+        <img src="images/logo.png" alt="Church Logo">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#ministries">Ministries</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#giving">Giving</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">☰</div>
+    </header>
+
+    <section class="hero">
+        
+        <video autoplay muted loop>
+        <source src="images/rev father.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video> 
+       
+
+        
+        <img src="images/croped1.jpg" alt="">
+        <div class="hero-content">
+            <!--<h1>Welcome To Grace Community Church</h1>
+            <p>A place of love, faith, and hope for everyone.</p> 
+            -->
+
+            <h1> <span class="welcome">Welcome to P.A.G</span> <br> Pentecostal Assemblies of God <br> <span
+                    class="sub-heading">- Mbale City Church</span></h1>
+            <p>Join us in worship and fellowship.</p>
+            <a href="#" class="cta-button">Plan Your Visit</a>
+        </div>
+    </section>
+
+  
+    <div class="oval-container">
+        <div class="location-info">
+            <h2>📍 Location</h2>
+            <p>Plot 6-7 Buginyanya Close, <br> Half London, Mbale, Uganda</p>
+        </div>
+        <div class="divider"></div>
+        <div class="service-time">
+            <h2>⏰ Service Time</h2>
+            <p>First Service: 7:30 AM – 9:45 AM <br> Second Service: 10:00 AM – 12:00 PM</p>
+        </div>
+    </div>
+
+    <section class="about-section">
+        <div class="book-container">
+            <!-- Left Page -->
+            <div class="left-page">
+                <h2>About Us</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it. 
+                    Lorem Ipsum is simply dummy text of the printing add some words.</p>
+            </div>
+
+            <!-- Right Page -->
+            <div class="right-page">
+                <h3>Vision</h3>
+                <p>A church with a holistic impact on the community.</p>
+
+                <h3>Mission</h3>
+                <p>Equip saints to cause holistic transformation by demonstrating the love and 
+                   power of Christ in the community of Mbale City and the surrounding areas.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="group-1">
+
+        <!-- Social Proof Section -->
+        <section class="social-proof">
+            <h2>Lives Transformed, Faith Strengthened</h2>
+            <p>Join thousands who have experienced God’s love through our ministry.</p>
+
+            <div class="stats-container">
+                <div class="stat-box">
+                    <h3>5,000+</h3>
+                    <p>Active Members</p>
+                </div>
+                <div class="stat-box">
+                    <h3>30+</h3>
+                    <p>Years of Service</p>
+                </div>
+                <div class="stat-box">
+                    <h3>100+</h3>
+                    <p>Outreach Programs</p>
+                </div>
+            </div>
+
+            <div class="testimonials">
+                <p>"Grace Community Church has been a blessing to my family." - John D.</p>
+                <p>"A wonderful place to grow in faith and fellowship." - Mary K.</p>
+            </div>
+        </section>
+
+        <!-- Leadership Section -->
+        <section class="leadership">
+            <h2>Meet the Hearts Behind the Mission</h2>
+            <p>Faithful leaders guiding our community with love and wisdom.</p>
+
+            <div class="leaders-container">
+                <div class="leader-card">
+                    <img src="images/pastor1.jpg" alt="">
+                    <h3>Magombe Stephen</h3>
+                    <p>Lead Pastor</p>
+                </div>
+                <div class="leader-card">
+                    <img src="images/pastor1.jpg" alt="Jane Smith">
+                    <h3>Jane Smith</h3>
+                    <p>Worship Director</p>
+                </div>
+                <div class="leader-card">
+                    <img src="images/youth-pastor1.jpg" alt="Mark Johnson">
+                    <h3>Mark Johnson</h3>
+                    <p>Youth Pastor</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+
+
+</body>
+
+</html>
