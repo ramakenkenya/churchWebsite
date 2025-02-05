@@ -78,12 +78,27 @@ body {
     }
 }
 
+
+
+
+
+
+
+
+
 .hero {
+    z-index: -1 !important;
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    background-image: url('../images/pluged2.jpg'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+
 
 .hero video {
     position: absolute;
@@ -154,6 +169,7 @@ body {
 
 /* CTA Button Styling */
 .cta-button {
+    z-index: 1 !important;
     font-family: 'Playfair Display', serif;
     font-size: 20px;
     font-weight: 600;
@@ -192,11 +208,10 @@ body {
 
 
 
-
+/*** time and location ***/
 
 
 .oval-container {
-    z-index: 123 !important;
     width: 650px;
     height: 260px;
     background: linear-gradient(135deg, #F4E0C4, #F4E0C4);
@@ -211,7 +226,7 @@ body {
     padding: 25px;
     transition: transform 0.3s ease-in-out;
     margin: auto;
-    margin-top: -60px;
+    margin-top: -100px;
 }
 
 .oval-container:hover {
@@ -256,7 +271,7 @@ body {
 
 
 
- /* About Us Section */
+ /* About Us Section *
  .about-section {
     background-color: #f4f4f4;
     padding: 50px 10%;
@@ -264,9 +279,9 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 80vh;
-}
+}  ***/
 
-/* Open Book Container */
+/* Open Book Container *
 .book-container {
     background-color: #EAE2DD;
     width: 80%;
@@ -277,9 +292,9 @@ body {
     border-radius: 15px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     position: relative;
-}
+}  ****/
 
-/* Left Page */
+/* Left Page *
 .left-page {
     width: 48%;
     padding-right: 20px;
@@ -299,9 +314,9 @@ body {
     font-size: 16px;
     line-height: 1.6;
     color: #333;
-}
+}    ***/
 
-/* Right Page */
+/* Right Page *
 .right-page {
     width: 48%;
     padding-left: 20px;
@@ -321,7 +336,106 @@ body {
     line-height: 1.6;
     color: #333;
     margin-bottom: 15px;
-}
+}   ***/
+
+
+
+
+
+
+
+
+        /* About Us Section */
+        .about-section {
+            background-color: #f4f4f4;
+            padding: 50px 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Open Book Container */
+        .book-container {
+            background: #EAE2DD;
+            width: 80%;
+            max-width: 900px;
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        /* Bookbinding Effect (Middle Shadow) */
+        .book-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), transparent);
+            transform: translateX(-50%);
+        }
+
+        /* Left Page */
+        .left-page {
+            width: 48%;
+            padding: 30px;
+            border-right: 2px solid rgba(0, 0, 0, 0.1);
+            transform: perspective(500px) rotateX(3deg) skewY(-2deg);
+            border-top-left-radius: 80px 50px;
+            border-bottom-left-radius: 50px 80px;
+            background: linear-gradient(to right, #f8f4f1, #EAE2DD);
+            box-shadow: inset -10px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-page h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 30px;
+            font-weight: 700;
+            color: #6D214F;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .left-page p {
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+        }
+
+        /* Right Page */
+        .right-page {
+            width: 48%;
+            padding: 30px;
+            transform: perspective(500px) rotateX(3deg) skewY(2deg);
+            border-top-right-radius: 80px 50px;
+            border-bottom-right-radius: 50px 80px;
+            background: linear-gradient(to left, #f8f4f1, #EAE2DD);
+            box-shadow: inset 10px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .right-page h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            font-weight: 600;
+            color: #6D214F;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .right-page p {
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+        }
 
 
 
