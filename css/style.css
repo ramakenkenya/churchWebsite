@@ -87,7 +87,7 @@ body {
 
 
 .hero {
-    z-index: -1 !important;
+    z-index: 0;
     position: relative;
     width: 100%;
     height: 100vh;
@@ -169,14 +169,13 @@ body {
 
 /* CTA Button Styling */
 .cta-button {
-    z-index: 1 !important;
     font-family: 'Playfair Display', serif;
     font-size: 20px;
     font-weight: 600;
-    color: #24161c;
-    background: linear-gradient(135deg, #ffffff, #ffffff);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    color: #ffffff;
     padding: 15px 30px;
-    border: none;
+    border: 1px solid white;
     border-radius: 30px;
     text-transform: uppercase;
     cursor: pointer;
@@ -191,7 +190,6 @@ body {
 .cta-button:hover {
     transform: scale(1.05);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
-    color: #ffffff;
     background: linear-gradient(135deg, #24161c, #24161c);
 }
 
@@ -212,6 +210,8 @@ body {
 
 
 .oval-container {
+    position: relative;
+    z-index: 1;
     width: 650px;
     height: 260px;
     background: linear-gradient(135deg, #F4E0C4, #F4E0C4);
@@ -353,19 +353,23 @@ body {
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            z-index: 2 !important;
+            position: relative;
         }
+
+   
 
         /* Open Book Container */
         .book-container {
             background: #EAE2DD;
-            width: 80%;
-            max-width: 900px;
+            width: 100%;
             display: flex;
             justify-content: space-between;
             padding: 40px;
             border-radius: 10px;
             box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-            position: relative;
+            
+            border: 1px solid #f4f4f4;
         }
 
         /* Bookbinding Effect (Middle Shadow) */
@@ -402,11 +406,12 @@ body {
         }
 
         .left-page p {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Lato', sans-serif;
             font-size: 16px;
             line-height: 1.6;
             color: #333;
             text-align: justify;
+            font-weight: bolder;
         }
 
         /* Right Page */
@@ -430,11 +435,12 @@ body {
         }
 
         .right-page p {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Lato', sans-serif;
             font-size: 16px;
             line-height: 1.6;
             color: #333;
             text-align: justify;
+            font-weight: bolder;
         }
 
 
@@ -551,6 +557,84 @@ body {
     margin: 25px 0 5px 0px;
 }
 
-.leader-card p {
-   
+
+
+
+
+
+
+
+
+
+
+
+
+/* Blog Section */
+.blog-section {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.blog-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Blog Post */
+.blog-post {
+    background: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: left;
+}
+
+/* Labels */
+.label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #007bff;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Different colors for categories */
+.label.sermon { background: #28a745; }      /* Green */
+.label.testimony { background: #ffc107; }  /* Yellow */
+.label.announcement { background: #dc3545; } /* Red */
+
+/* Blog Title */
+.blog-post h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+/* Date */
+.date {
+    color: gray;
+    font-size: 0.9em;
+}
+
+/* Content Preview */
+.content {
+    margin: 10px 0;
+}
+
+/* Read More Link */
+.read-more {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
 }
