@@ -352,7 +352,7 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+        
             z-index: 2 !important;
             position: relative;
         }
@@ -462,7 +462,7 @@ body {
 
 /* General Styles */
 .group-1 {
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
@@ -571,19 +571,24 @@ body {
 
 /* Blog Section */
 .blog-section {
-    width: 80%;
+    width: 60%;
     margin: auto;
     text-align: center;
     padding: 50px 0;
+    background-color: #f4e0c4;
 }
 
 .blog-section h2 {
     font-size: 2em;
     margin-bottom: 20px;
+    color: #24161c;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
 }
 
 /* Blog Post */
 .blog-post {
+    /*background: #f9f9f9;*/
     background: #f9f9f9;
     padding: 20px;
     margin: 20px 0;
@@ -591,6 +596,8 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
     text-align: left;
+    overflow: hidden;
+ 
 }
 
 /* Labels */
@@ -598,23 +605,22 @@ body {
     position: absolute;
     top: 10px;
     left: 10px;
-    background: #007bff;
+    background: #eb0f6e;
     color: white;
     padding: 5px 10px;
     font-size: 0.9em;
     font-weight: bold;
     border-radius: 5px;
+    font-family: 'Lato', sans-serif;
 }
 
-/* Different colors for categories */
-.label.sermon { background: #28a745; }      /* Green */
-.label.testimony { background: #ffc107; }  /* Yellow */
-.label.announcement { background: #dc3545; } /* Red */
 
 /* Blog Title */
 .blog-post h3 {
     margin: 10px 0;
-    font-size: 1.5em;
+    font-size: 1.1em;
+    font-family: 'Lato', sans-serif;
+    color: #24161c;
 }
 
 /* Date */
@@ -626,15 +632,29 @@ body {
 /* Content Preview */
 .content {
     margin: 10px 0;
+    width: 80%;
 }
 
 /* Read More Link */
 .read-more {
-    color: #007bff;
+    /**color: #007bff; **/
+    color: #eb0f6e;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bolder;
+    font-family: 'Lato', sans-serif;
 }
 
 .read-more:hover {
     text-decoration: underline;
 }
+
+
+.blog-post img {
+    float: left;
+   margin-right: 90px;
+}
+
+.blog-post p {
+    font-family: 'Lato', sans-serif;
+}
+
