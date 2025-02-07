@@ -121,7 +121,7 @@ body {
 
 .hero-content h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 50px;
+    font-size: 200%;
     font-weight: 700;
     text-transform: uppercase;
     text-shadow: 2px 2px 0px #24161C, -2px 0px 0px #ffffff;
@@ -130,31 +130,12 @@ body {
 
 
 .sub-heading {
-    font-size: 40px;
+    font-size: 100%;
     /* Smaller than the main heading */
     font-weight: 500;
     /* Slightly lighter than the main heading */
 }
 
-
-.welcome {
-    font-size: 30px;
-    /* Smaller than the main heading */
-    font-weight: 500;
-    /* Slightly lighter than the main heading */
-    font-style: italic;
-    /* Adds a subtle distinction */
-    color: #ffffff;
-    /* Darker but slightly muted for elegance */
-    text-transform: capitalize;
-    /* Prevents all-uppercase for better readability */
-    text-shadow: 1px 1px 0px #24161C, -1px -1px 0px #24161C;
-    /* Matches main heading but lighter */
-    display: inline-block;
-    /* Allows width adjustments */
-    width: max-content;
-    /* Ensures it doesn't stretch */
-}
 
 
 
@@ -400,7 +381,7 @@ body {
             font-family: 'Playfair Display', serif;
             font-size: 30px;
             font-weight: 700;
-            color: #6D214F;
+            color: #24161c;
             margin-bottom: 15px;
             text-align: center;
         }
@@ -429,9 +410,10 @@ body {
             font-family: 'Playfair Display', serif;
             font-size: 22px;
             font-weight: 600;
-            color: #6D214F;
+            color: #24161c;
             margin-bottom: 8px;
             text-align: center;
+            margin-top: 20px;
         }
 
         .right-page p {
@@ -441,6 +423,10 @@ body {
             color: #333;
             text-align: justify;
             font-weight: bolder;
+        }
+
+        .right {
+            margin-top: 40px;
         }
 
 
@@ -472,8 +458,8 @@ body {
 
 /* Social Proof Section */
 .social-proof {
-    background-color: #F4E0C4;
-    color: 24161C;
+    background-color: #f4e0c4;
+    color: #24161c;
     padding: 50px 20px;
 }
 
@@ -576,6 +562,8 @@ body {
     text-align: center;
     padding: 50px 0;
     background-color: #f4e0c4;
+    padding-bottom: 0px;
+    margin-top: 20px;
 }
 
 .blog-section h2 {
@@ -637,7 +625,6 @@ body {
 
 /* Read More Link */
 .read-more {
-    /**color: #007bff; **/
     color: #eb0f6e;
     text-decoration: none;
     font-weight: bolder;
@@ -657,4 +644,126 @@ body {
 .blog-post p {
     font-family: 'Lato', sans-serif;
 }
+
+
+
+
+
+
+
+/* Footer CSS */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #24161C;
+    padding: 30px;
+    font-weight: bolder;
+}
+
+/* Google Map */
+.footer .map {
+    width: 30%;
+}
+.footer .map iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+}
+
+/* Address */
+.footer .address {
+    width: 20%;
+    font-size: 16px;
+    color: #be9968;
+    line-height: 30px;
+    padding-left: 40px;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Navigation Links */
+.footer .nav {
+    width: 20%;
+    padding-left: 10%;
+    font-weight: bolder;
+    font-family: 'Lato', sans-serif;
+}
+.footer .nav h3 {
+    color: #be9968;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.footer .nav ul {
+    list-style: none;
+    padding: 0;
+}
+.footer .nav ul li {
+    margin: 5px 0;
+}
+.footer .nav ul li a {
+    color: #DED2B8;
+    text-decoration: none;
+}
+
+
+
+
+/* Social Media */
+.footer .social-media {
+    width: 15%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+.footer .social-media h3 {
+    color: #DED2B8;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.footer .social-media ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.footer .social-media ul li {
+    display: inline;
+}
+.footer .social-media ul li a {
+    color: #DED2B8;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-media img {
+    width: 20px;
+}
+
+
+
+
+
+/* Church Name */
+.footer .church-name {
+    width: 13%;
+    text-align: left;
+    font-weight: bolder;
+    font-size: 22px;
+    color: #DED2B8;
+    position: relative;
+    font-family: 'Playfair Display', serif;
+
+}
+.footer .church-name::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 0;
+    height: 100%;
+    width: 5px;
+    background-color: #be9968;
+}
+
+
+
 
