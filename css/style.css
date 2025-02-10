@@ -92,7 +92,8 @@ body {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background-image: url('../images/pluged2.jpg'); /* Replace with your actual image path */
+    background-image: url('../images/pluged2.jpg');
+    /* Replace with your actual image path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -252,42 +253,68 @@ body {
 
 
 
- /* About Us Section *
- .about-section {
+
+
+
+
+
+/* About Us Section */
+.about-section {
     background-color: #f4f4f4;
     padding: 50px 10%;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
-}  ***/
+    z-index: 2 !important;
+    position: relative;
+}
 
-/* Open Book Container *
+
+
+/* Open Book Container */
 .book-container {
-    background-color: #EAE2DD;
-    width: 80%;
-    max-width: 900px;
+    background: #EAE2DD;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 40px;
-    border-radius: 15px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    position: relative;
-}  ****/
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 
-/* Left Page *
+    border: 1px solid #f4f4f4;
+}
+
+/* Bookbinding Effect (Middle Shadow) */
+.book-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), transparent);
+    transform: translateX(-50%);
+}
+
+/* Left Page */
 .left-page {
     width: 48%;
-    padding-right: 20px;
-    border-right: 2px solid #C3A07B;
+    padding: 30px;
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+    transform: perspective(500px) rotateX(3deg) skewY(-2deg);
+    border-top-left-radius: 80px 50px;
+    border-bottom-left-radius: 50px 80px;
+    background: linear-gradient(to right, #f8f4f1, #EAE2DD);
+    box-shadow: inset -10px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
 .left-page h2 {
     font-family: 'Playfair Display', serif;
     font-size: 30px;
     font-weight: 700;
-    color: #6D214F;
+    color: #24161c;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .left-page p {
@@ -295,20 +322,29 @@ body {
     font-size: 16px;
     line-height: 1.6;
     color: #333;
-}    ***/
+    text-align: justify;
+    font-weight: bolder;
+}
 
-/* Right Page *
+/* Right Page */
 .right-page {
     width: 48%;
-    padding-left: 20px;
+    padding: 30px;
+    transform: perspective(500px) rotateX(3deg) skewY(2deg);
+    border-top-right-radius: 80px 50px;
+    border-bottom-right-radius: 50px 80px;
+    background: linear-gradient(to left, #f8f4f1, #EAE2DD);
+    box-shadow: inset 10px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
 .right-page h3 {
     font-family: 'Playfair Display', serif;
     font-size: 22px;
     font-weight: 600;
-    color: #6D214F;
+    color: #24161c;
     margin-bottom: 8px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .right-page p {
@@ -316,118 +352,13 @@ body {
     font-size: 16px;
     line-height: 1.6;
     color: #333;
-    margin-bottom: 15px;
-}   ***/
+    text-align: justify;
+    font-weight: bolder;
+}
 
-
-
-
-
-
-
-
-        /* About Us Section */
-        .about-section {
-            background-color: #f4f4f4;
-            padding: 50px 10%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        
-            z-index: 2 !important;
-            position: relative;
-        }
-
-   
-
-        /* Open Book Container */
-        .book-container {
-            background: #EAE2DD;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-            
-            border: 1px solid #f4f4f4;
-        }
-
-        /* Bookbinding Effect (Middle Shadow) */
-        .book-container::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 50%;
-            width: 4px;
-            height: 100%;
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), transparent);
-            transform: translateX(-50%);
-        }
-
-        /* Left Page */
-        .left-page {
-            width: 48%;
-            padding: 30px;
-            border-right: 2px solid rgba(0, 0, 0, 0.1);
-            transform: perspective(500px) rotateX(3deg) skewY(-2deg);
-            border-top-left-radius: 80px 50px;
-            border-bottom-left-radius: 50px 80px;
-            background: linear-gradient(to right, #f8f4f1, #EAE2DD);
-            box-shadow: inset -10px 0px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .left-page h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 30px;
-            font-weight: 700;
-            color: #24161c;
-            margin-bottom: 15px;
-            text-align: center;
-        }
-
-        .left-page p {
-            font-family: 'Lato', sans-serif;
-            font-size: 16px;
-            line-height: 1.6;
-            color: #333;
-            text-align: justify;
-            font-weight: bolder;
-        }
-
-        /* Right Page */
-        .right-page {
-            width: 48%;
-            padding: 30px;
-            transform: perspective(500px) rotateX(3deg) skewY(2deg);
-            border-top-right-radius: 80px 50px;
-            border-bottom-right-radius: 50px 80px;
-            background: linear-gradient(to left, #f8f4f1, #EAE2DD);
-            box-shadow: inset 10px 0px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .right-page h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 22px;
-            font-weight: 600;
-            color: #24161c;
-            margin-bottom: 8px;
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .right-page p {
-            font-family: 'Lato', sans-serif;
-            font-size: 16px;
-            line-height: 1.6;
-            color: #333;
-            text-align: justify;
-            font-weight: bolder;
-        }
-
-        .right {
-            margin-top: 40px;
-        }
+.right {
+    margin-top: 40px;
+}
 
 
 
@@ -526,10 +457,10 @@ body {
     padding: 20px;
     border-radius: 10px;
     width: 250px;
-    
+
     box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
-   
-   
+
+
 }
 
 .leader-card img {
@@ -561,9 +492,6 @@ body {
     margin: auto;
     text-align: center;
     padding: 50px 0;
-    background-color: #f4e0c4;
-    padding-bottom: 0px;
-    margin-top: 20px;
 }
 
 .blog-section h2 {
@@ -572,6 +500,12 @@ body {
     color: #24161c;
     text-transform: uppercase;
     font-family: 'Playfair Display', serif;
+    margin-bottom: 40px;
+}
+
+.blog-section h2 .lower {
+    font-size: 0.6em;
+    text-transform: capitalize;
 }
 
 /* Blog Post */
@@ -585,7 +519,7 @@ body {
     position: relative;
     text-align: left;
     overflow: hidden;
- 
+
 }
 
 /* Labels */
@@ -638,7 +572,7 @@ body {
 
 .blog-post img {
     float: left;
-   margin-right: 90px;
+    margin-right: 90px;
 }
 
 .blog-post p {
@@ -658,13 +592,14 @@ body {
     align-items: center;
     background-color: #24161C;
     padding: 30px;
-    font-weight: bolder;
+    font-weight: lighter;
 }
 
 /* Google Map */
 .footer .map {
     width: 30%;
 }
+
 .footer .map iframe {
     width: 100%;
     height: 200px;
@@ -684,22 +619,26 @@ body {
 /* Navigation Links */
 .footer .nav {
     width: 20%;
-    padding-left: 10%;
-    font-weight: bolder;
+    padding-left: 8%;
     font-family: 'Lato', sans-serif;
 }
+
 .footer .nav h3 {
     color: #be9968;
     font-size: 18px;
     margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
 }
+
 .footer .nav ul {
     list-style: none;
     padding: 0;
 }
+
 .footer .nav ul li {
     margin: 5px 0;
 }
+
 .footer .nav ul li a {
     color: #DED2B8;
     text-decoration: none;
@@ -711,24 +650,29 @@ body {
 /* Social Media */
 .footer .social-media {
     width: 15%;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
+
 .footer .social-media h3 {
     color: #DED2B8;
     font-size: 18px;
     margin-bottom: 10px;
 }
+
 .footer .social-media ul {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
     gap: 10px;
+
+    width: 58%;
 }
+
 .footer .social-media ul li {
     display: inline;
 }
+
 .footer .social-media ul li a {
     color: #DED2B8;
     font-size: 20px;
@@ -752,8 +696,10 @@ body {
     color: #DED2B8;
     position: relative;
     font-family: 'Playfair Display', serif;
+    font-weight: 700;
 
 }
+
 .footer .church-name::before {
     content: "";
     position: absolute;
@@ -763,7 +709,3 @@ body {
     width: 5px;
     background-color: #be9968;
 }
-
-
-
-
