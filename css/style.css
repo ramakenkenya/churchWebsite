@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #f4f4f4;
+    background-color: #ffffff;
 }
 
 .header {
@@ -534,10 +534,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     width: 250px;
-    
     box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
-   
-   
 }
 
 .leader-card img {
@@ -553,4 +550,140 @@ body {
 
 .leader-card p {
    
+}
+
+
+
+
+
+
+
+/* Footer CSS */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #2a2a2a; /* Main background */
+    clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
+    color: #DED2B8;
+    padding: 40px 20px;
+    padding-top: 100px;
+}
+
+
+.footer > div:not(.church-name) {
+    min-height: 200px; /* Ensures all sections except .church-name have this height */
+}
+
+
+/* Address */
+.footer .address {
+    width: 30%;
+    font-size: 13px;
+    line-height: 30px;
+    padding-left: 40px;
+    font-family: 'Lato', sans-serif;
+}
+
+.filler {
+    font-size: 15px;
+}
+
+/* Navigation Links */
+.footer .nav {
+    width: 20%;
+    padding-left: 8%;
+    font-family: 'Lato', sans-serif;
+    line-height: 42px;
+    margin-top: 40px;
+}
+
+.footer .nav h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: -4px;
+    font-family: 'Playfair Display', serif;
+ 
+
+}
+
+.footer .nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .nav ul li {
+    margin: 5px 0;
+}
+
+.footer .nav ul li a {
+    color: #DED2B8;
+    text-decoration: none;
+}
+
+
+
+
+/* Social Media */
+.footer .social-media {
+    margin-top: 40px;
+    width: 15%;
+    font-family: 'Playfair Display', serif;
+}
+
+.footer .social-media h3 {
+    color: #DED2B8;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer .social-media ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 58%;
+}
+
+.footer .social-media ul li {
+    display: inline;
+}
+
+.footer .social-media ul li a {
+    color: #DED2B8;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-media img {
+    width: 20px;
+}
+
+
+
+
+
+/* Church Name */
+.footer .church-name {
+    margin-top: 40px;
+    width: 13%;
+    text-align: left;
+    font-weight: bolder;
+    font-size: 22px;
+    color: #DED2B8;
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+ 
+}
+
+.footer .church-name::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 0;
+    height: 100%;
+    width: 5px;
+    background-color: #be9968;
 }
