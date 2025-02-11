@@ -92,7 +92,8 @@ body {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background-image: url('../images/pluged2.jpg'); /* Replace with your actual image path */
+    background-image: url('../images/pluged2.jpg');
+    /* Replace with your actual image path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -271,34 +272,54 @@ body {
 
 
 
- /* About Us Section *
- .about-section {
+
+
+
+/* About Us Section */
+.about-section {
     background-color: #f4f4f4;
     padding: 50px 10%;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
-}  ***/
+    min-height: 100vh;
+}
 
-/* Open Book Container *
+/* Open Book Container */
 .book-container {
-    background-color: #EAE2DD;
+    background: #EAE2DD;
     width: 80%;
     max-width: 900px;
     display: flex;
     justify-content: space-between;
     padding: 40px;
-    border-radius: 15px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
     position: relative;
-}  ****/
+}
 
-/* Left Page *
+/* Bookbinding Effect (Middle Shadow) */
+.book-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), transparent);
+    transform: translateX(-50%);
+}
+
+/* Left Page */
 .left-page {
     width: 48%;
-    padding-right: 20px;
-    border-right: 2px solid #C3A07B;
+    padding: 30px;
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+    transform: perspective(500px) rotateX(3deg) skewY(-2deg);
+    border-top-left-radius: 80px 50px;
+    border-bottom-left-radius: 50px 80px;
+    background: linear-gradient(to right, #f8f4f1, #EAE2DD);
+    box-shadow: inset -10px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
 .left-page h2 {
@@ -307,6 +328,7 @@ body {
     font-weight: 700;
     color: #6D214F;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .left-page p {
@@ -314,12 +336,18 @@ body {
     font-size: 16px;
     line-height: 1.6;
     color: #333;
-}    ***/
+    text-align: justify;
+}
 
-/* Right Page *
+/* Right Page */
 .right-page {
     width: 48%;
-    padding-left: 20px;
+    padding: 30px;
+    transform: perspective(500px) rotateX(3deg) skewY(2deg);
+    border-top-right-radius: 80px 50px;
+    border-bottom-right-radius: 50px 80px;
+    background: linear-gradient(to left, #f8f4f1, #EAE2DD);
+    box-shadow: inset 10px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
 .right-page h3 {
@@ -328,114 +356,16 @@ body {
     font-weight: 600;
     color: #6D214F;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .right-page p {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 16px;
     line-height: 1.6;
     color: #333;
-    margin-bottom: 15px;
-}   ***/
-
-
-
-
-
-
-
-
-        /* About Us Section */
-        .about-section {
-            background-color: #f4f4f4;
-            padding: 50px 10%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        /* Open Book Container */
-        .book-container {
-            background: #EAE2DD;
-            width: 80%;
-            max-width: 900px;
-            display: flex;
-            justify-content: space-between;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-            position: relative;
-        }
-
-        /* Bookbinding Effect (Middle Shadow) */
-        .book-container::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 50%;
-            width: 4px;
-            height: 100%;
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), transparent);
-            transform: translateX(-50%);
-        }
-
-        /* Left Page */
-        .left-page {
-            width: 48%;
-            padding: 30px;
-            border-right: 2px solid rgba(0, 0, 0, 0.1);
-            transform: perspective(500px) rotateX(3deg) skewY(-2deg);
-            border-top-left-radius: 80px 50px;
-            border-bottom-left-radius: 50px 80px;
-            background: linear-gradient(to right, #f8f4f1, #EAE2DD);
-            box-shadow: inset -10px 0px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .left-page h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 30px;
-            font-weight: 700;
-            color: #6D214F;
-            margin-bottom: 15px;
-            text-align: center;
-        }
-
-        .left-page p {
-            font-family: 'Arial', sans-serif;
-            font-size: 16px;
-            line-height: 1.6;
-            color: #333;
-            text-align: justify;
-        }
-
-        /* Right Page */
-        .right-page {
-            width: 48%;
-            padding: 30px;
-            transform: perspective(500px) rotateX(3deg) skewY(2deg);
-            border-top-right-radius: 80px 50px;
-            border-bottom-right-radius: 50px 80px;
-            background: linear-gradient(to left, #f8f4f1, #EAE2DD);
-            box-shadow: inset 10px 0px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .right-page h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 22px;
-            font-weight: 600;
-            color: #6D214F;
-            margin-bottom: 8px;
-            text-align: center;
-        }
-
-        .right-page p {
-            font-family: 'Arial', sans-serif;
-            font-size: 16px;
-            line-height: 1.6;
-            color: #333;
-            text-align: justify;
-        }
+    text-align: justify;
+}
 
 
 
@@ -462,7 +392,6 @@ body {
     background-color: #f8f9fa;
     text-align: center;
 }
-
 
 /* Social Proof Section */
 .social-proof {
@@ -541,16 +470,79 @@ body {
     width: 200px;
     margin: auto;
     display: flex;
-
 }
 
 .leader-card h3 {
     margin: 25px 0 5px 0px;
 }
 
-.leader-card p {
-   
+
+
+
+
+
+
+
+
+/**  blog-section  **/
+.blog-section {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0;
 }
+
+
+.blog-post {
+    width: 40%;
+    margin: 30px;
+    text-align: left;
+    padding: 1%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    font-family: 'Lato', sans-serif;
+}
+
+
+.blog-post img {
+    width: 80%;
+    height: 40%;
+    border-radius: 15px;
+}
+
+.blog-post h3 {
+    color: #24161c;
+    font-size: 25px;
+}
+.blog-post p{
+    color: #4d3f31;
+    font-size: 13px;
+    line-height: 25px;
+    word-spacing: 4px;
+}
+
+.read-more {
+    text-decoration: none;
+    background-color: #c3a07b;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    width: 120px;
+}
+
+.label {
+    display: none;
+}
+
+
+
+
+
+
 
 
 
@@ -563,7 +555,8 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    background-color: #2a2a2a; /* Main background */
+    background-color: #2a2a2a;
+    /* Main background */
     clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
     color: #DED2B8;
     padding: 40px 20px;
@@ -571,8 +564,9 @@ body {
 }
 
 
-.footer > div:not(.church-name) {
-    min-height: 200px; /* Ensures all sections except .church-name have this height */
+.footer>div:not(.church-name) {
+    min-height: 200px;
+    /* Ensures all sections except .church-name have this height */
 }
 
 
@@ -603,8 +597,6 @@ body {
     margin-bottom: 10px;
     margin-top: -4px;
     font-family: 'Playfair Display', serif;
- 
-
 }
 
 .footer .nav ul {
@@ -675,7 +667,7 @@ body {
     position: relative;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
- 
+
 }
 
 .footer .church-name::before {
