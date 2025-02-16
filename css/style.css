@@ -618,12 +618,35 @@ body {
 
 
 
+.diagonal {
+    margin: auto;
+    width: 100%;
+    height: 500px;
+    background-color: #6E5A48;
+    margin: auto;
+    clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
+    padding: 40px 20px;
+    position: absolute;
 
+    position: absolute;
+    left: 5%;
+    top: 4030px;
+
+   
+
+
+
+        border-top-left-radius: 200px;
+        overflow: hidden;
+    
+}
 
 
 
 
 /* Footer CSS */
+
+
 .footer {
     display: flex;
     justify-content: space-around;
@@ -633,6 +656,10 @@ body {
     clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
     padding: 40px 20px;
     padding-top: 100px;
+    
+
+    border-top-left-radius: 200px;
+    overflow: hidden;
 }
 
 
@@ -716,7 +743,7 @@ body {
     font-size: 18px;
     margin-bottom: 30px;
     margin-top: 10px;
-    margin-left: -65px;
+    margin-left: -68px;
     font-family: 'Lato', sans-serif;
 }
 
@@ -738,10 +765,14 @@ body {
 
 
 
+
+
+
+
+
 .footer-bottom {
     background-color: #2a2a2a;
     height: 60px;
-    border-top: 1px solid;
 }
 
 .footer-line {
@@ -764,29 +795,3 @@ body {
     font-weight: lighter;
 }
 
-
-
-
-/* Church Name */
-/*.footer .church-name {
-    margin-top: 40px;
-    width: 13%;
-    text-align: left;
-    font-weight: bolder;
-    font-size: 22px;
-    color: #DED2B8;
-    position: relative;
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-
-}
-
-.footer .church-name::before {
-    content: "";
-    position: absolute;
-    left: -15px;
-    top: 0;
-    height: 100%;
-    width: 5px;
-    background-color: #be9968;
-}*/
