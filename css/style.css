@@ -610,6 +610,10 @@ body {
     font-size: 13px;
     line-height: 25px;
     word-spacing: 4px;
+
+
+    max-height: 125px;          
+    overflow: hidden;  
 }
 
 .read-more {
@@ -636,6 +640,12 @@ body {
 
 
 
+
+
+
+
+
+
 .diagonal {
     margin: auto;
     width: 95%;
@@ -649,7 +659,6 @@ body {
     top: 4030px;
     border-top-left-radius: 200px;
     overflow: hidden;
-
 }
 
 
