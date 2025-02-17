@@ -66,6 +66,139 @@ body {
 
 
 
+/* Mobile Responsiveness */
+@media (max-width: 425px) {
+    .header {
+        flex-direction: row; /* Keep the header layout horizontal */
+        justify-content: space-between; /* Space out the logo and navigation */
+        align-items: center;
+        padding: 15px;
+        width: 100%
+    }
+
+    .header img {
+        height: 100px;
+        padding-left: 0;
+    }
+
+    .nav-links {
+        display: flex; /* Keep the navigation horizontal */
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 0 10px;
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .nav-links a {
+        font-size: 10px; /* Reduced font-size */
+        text-transform: capitalize;
+    }
+
+    .cta-header a {
+        padding: 12px 20px;
+        margin-top: 0;
+        width: auto;       
+        border-radius: 50px;
+        margin-left: 10px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .hero {
