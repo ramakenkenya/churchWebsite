@@ -270,6 +270,131 @@ body {
 
 
 
+
+@media (max-width: 768px) {
+    .hero {
+        height: auto; /* Allow height to adjust dynamically */
+        padding: 50px 20px;
+    }
+
+    .hero-content {
+        margin-left: 0;
+        text-align: center; /* Center align text for smaller screens */
+        margin-top: -40px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px; /* Reduce font size */
+        padding-top: 50px;
+    }
+
+    .hero-content p {
+        font-size: 12px; /* Slightly reduce paragraph font size */
+        width: 100%; /* Ensure it fits smaller screens */
+        max-width: 350px;
+        margin: 0 auto; /* Center paragraph */
+        padding-top: 30px;
+    }
+
+    .hero-content .join,
+    .hero-content .watch {
+        width: 160px; /* Reduce button width */
+        padding: 12px;
+        font-size: 11px; /* Reduce font size */
+        margin-top: 30px;
+    }
+
+    .hero-content .watch {
+        margin-left: 10px; /* Reduce spacing between buttons */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*** time and location ***/
 
 .oval-container {
