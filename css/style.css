@@ -799,67 +799,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Social Proof Section */
 .social-proof-container {
     position: relative;
@@ -967,6 +906,179 @@ body {
     font-size: 14px;
     font-family: 'Playfair Display', serif;
 }
+
+
+
+
+
+
+
+
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Social Proof Section */
+    .social-proof-container {
+        height: auto;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+   /* Social Proof */
+.social-proof {
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    width: 75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 53px;
+}
+
+
+    .social-proof h2 {
+        font-size: 28px;
+        margin-top: 20px;
+    }
+
+    .testimonials {
+        width: 90%;
+        font-size: 12px;
+        line-height: 22px;
+        margin-top: 20px;
+    }
+
+    .stats-container {
+        display: block;
+        gap: 20px;
+        padding-top: 20px;
+    }
+
+    .stat-box {
+        margin: auto;
+        color: #C3A07B;
+        padding: 20px;
+        border-radius: 10px;
+        width: 200px;
+        border-bottom: 2px solid #ffffff; /* Adds horizontal line */
+    }
+    
+    
+
+    .stat-box h3 {
+        font-size: 30px;
+        margin: 0;
+        font-family: 'Playfair Display', serif;
+        display: flex;
+        justify-content: center; /* Centers content horizontally */
+        align-items: center; /* Centers content vertically */
+        gap: 18px; /* Adds space between image and text */
+        text-align: center; /* Centers the text */
+    }
+    
+
+    .stat-box p {
+        font-size: 12px;
+        margin-top: 10px;
+        color: #ffffff;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
