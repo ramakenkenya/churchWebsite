@@ -481,6 +481,132 @@ body {
 
 
 
+@media (max-width: 768px) {
+    .oval-container {
+        width: 90%; /* Make it more fluid for smaller screens */
+        height: auto; /* Allow it to adjust dynamically */
+        flex-direction: column; /* Stack elements vertically */
+        padding: 20px;
+        text-align: center; /* Center content */
+        margin-top: 20px; /* Adjust spacing */
+    }
+
+    .location-info,
+    .service-time {
+        width: 100%; /* Make them full width */
+        text-align: center; /* Center align text */
+        padding: 10px 0;
+    }
+
+    .divider {
+        width: 70%; /* Make the divider horizontal */
+        height: 2px;
+        margin: 10px auto; /* Center it */
+    }
+
+    .oval-container .service-time h2,
+    .oval-container .location-info h2 {
+        font-size: 22px; /* Reduce heading size */
+        gap: 5px; /* Adjust spacing between image and text */
+    }
+
+    .location-info p,
+    .service-time p {
+        font-size: 13px; /* Slightly reduce font size */
+        padding-left: 0;
+        line-height: 25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
