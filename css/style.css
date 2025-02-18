@@ -1017,80 +1017,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Leadership Section */
 .leadership {
     background-color: white;
@@ -1155,6 +1081,106 @@ body {
     margin-top: 12px;
     font-weight: normal;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .leadership h2 {
+        font-size: 26px;
+        margin-top: 140px;
+    }
+    
+    .leadership p {
+        font-size: 20px;
+        width: 90%;
+        margin: auto;
+       
+    }
+    
+    .leaders-container {
+        gap: 50px;
+        margin-top: 80px;
+    }
+    
+    .leader-card {
+        width: 240px;
+        height: 280px;
+    }
+    
+    .leader-card img {
+        width: 240px;
+    }
+    
+    .leader-card p {
+        font-size: 18px;
+    }
+    
+    .leader-card h3 {
+        font-size: 22px;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
