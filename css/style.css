@@ -67,10 +67,12 @@ body {
 
 
 /* Mobile Responsiveness */
-@media (max-width: 425px) {
+@media (max-width: 768px) {
     .header {
-        flex-direction: row; /* Keep the header layout horizontal */
-        justify-content: space-between; /* Space out the logo and navigation */
+        flex-direction: row;
+        /* Keep the header layout horizontal */
+        justify-content: space-between;
+        /* Space out the logo and navigation */
         align-items: center;
         padding: 15px;
         width: 100%
@@ -82,7 +84,8 @@ body {
     }
 
     .nav-links {
-        display: flex; /* Keep the navigation horizontal */
+        display: flex;
+        /* Keep the navigation horizontal */
         margin: 0;
         padding: 0;
         text-align: center;
@@ -95,14 +98,15 @@ body {
     }
 
     .nav-links a {
-        font-size: 10px; /* Reduced font-size */
+        font-size: 10px;
+        /* Reduced font-size */
         text-transform: capitalize;
     }
 
     .cta-header a {
         padding: 12px 20px;
         margin-top: 0;
-        width: auto;       
+        width: auto;
         border-radius: 50px;
         margin-left: 10px;
     }
@@ -273,39 +277,48 @@ body {
 
 @media (max-width: 768px) {
     .hero {
-        height: auto; /* Allow height to adjust dynamically */
+        height: auto;
+        /* Allow height to adjust dynamically */
         padding: 50px 20px;
     }
 
     .hero-content {
         margin-left: 0;
-        text-align: center; /* Center align text for smaller screens */
+        text-align: center;
+        /* Center align text for smaller screens */
         margin-top: -40px;
     }
 
     .hero-content h1 {
-        font-size: 28px; /* Reduce font size */
+        font-size: 28px;
+        /* Reduce font size */
         padding-top: 50px;
     }
 
     .hero-content p {
-        font-size: 12px; /* Slightly reduce paragraph font size */
-        width: 100%; /* Ensure it fits smaller screens */
+        font-size: 12px;
+        /* Slightly reduce paragraph font size */
+        width: 100%;
+        /* Ensure it fits smaller screens */
         max-width: 350px;
-        margin: 0 auto; /* Center paragraph */
+        margin: 0 auto;
+        /* Center paragraph */
         padding-top: 30px;
     }
 
     .hero-content .join,
     .hero-content .watch {
-        width: 160px; /* Reduce button width */
+        width: 160px;
+        /* Reduce button width */
         padding: 12px;
-        font-size: 11px; /* Reduce font size */
+        font-size: 11px;
+        /* Reduce font size */
         margin-top: 30px;
     }
 
     .hero-content .watch {
-        margin-left: 10px; /* Reduce spacing between buttons */
+        margin-left: 10px;
+        /* Reduce spacing between buttons */
     }
 }
 
@@ -483,36 +496,48 @@ body {
 
 @media (max-width: 768px) {
     .oval-container {
-        width: 90%; /* Make it more fluid for smaller screens */
-        height: auto; /* Allow it to adjust dynamically */
-        flex-direction: column; /* Stack elements vertically */
+        width: 90%;
+        /* Make it more fluid for smaller screens */
+        height: auto;
+        /* Allow it to adjust dynamically */
+        flex-direction: column;
+        /* Stack elements vertically */
         padding: 20px;
-        text-align: center; /* Center content */
-        margin-top: 20px; /* Adjust spacing */
+        text-align: center;
+        /* Center content */
+        margin-top: 20px;
+        /* Adjust spacing */
     }
 
     .location-info,
     .service-time {
-        width: 100%; /* Make them full width */
-        text-align: center; /* Center align text */
+        width: 100%;
+        /* Make them full width */
+        text-align: center;
+        /* Center align text */
         padding: 10px 0;
     }
 
     .divider {
-        width: 70%; /* Make the divider horizontal */
+        width: 70%;
+        /* Make the divider horizontal */
         height: 2px;
-        margin: 10px auto; /* Center it */
+        margin: 10px auto;
+        /* Center it */
     }
 
     .oval-container .service-time h2,
     .oval-container .location-info h2 {
-        font-size: 22px; /* Reduce heading size */
-        gap: 5px; /* Adjust spacing between image and text */
+        font-size: 22px;
+        /* Reduce heading size */
+        gap: 5px;
+        /* Adjust spacing between image and text */
     }
 
     .location-info p,
     .service-time p {
-        font-size: 13px; /* Slightly reduce font size */
+        font-size: 13px;
+        /* Slightly reduce font size */
         padding-left: 0;
         line-height: 25px;
     }
@@ -918,6 +943,7 @@ body {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+
     /* Social Proof Section */
     .social-proof-container {
         height: auto;
@@ -925,19 +951,19 @@ body {
         margin-bottom: 50px;
     }
 
-   /* Social Proof */
-.social-proof {
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
-    width: 75%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 53px;
-}
+    /* Social Proof */
+    .social-proof {
+        color: white;
+        padding: 50px 20px;
+        text-align: center;
+        width: 75%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 53px;
+    }
 
 
     .social-proof h2 {
@@ -964,22 +990,27 @@ body {
         padding: 20px;
         border-radius: 10px;
         width: 200px;
-        border-bottom: 2px solid #ffffff; /* Adds horizontal line */
+        border-bottom: 2px solid #ffffff;
+        /* Adds horizontal line */
     }
-    
-    
+
+
 
     .stat-box h3 {
         font-size: 30px;
         margin: 0;
         font-family: 'Playfair Display', serif;
         display: flex;
-        justify-content: center; /* Centers content horizontally */
-        align-items: center; /* Centers content vertically */
-        gap: 18px; /* Adds space between image and text */
-        text-align: center; /* Centers the text */
+        justify-content: center;
+        /* Centers content horizontally */
+        align-items: center;
+        /* Centers content vertically */
+        gap: 18px;
+        /* Adds space between image and text */
+        text-align: center;
+        /* Centers the text */
     }
-    
+
 
     .stat-box p {
         font-size: 12px;
@@ -1086,12 +1117,12 @@ body {
 
 
 @media (max-width: 768px) {
-    
+
     .leadership {
         margin-top: 180px;
     }
-    
-    
+
+
     .leadership h2 {
         font-size: 26px;
         margin-top: 140px;
@@ -1099,36 +1130,36 @@ body {
         margin: auto;
         padding-bottom: 20px;
     }
-    
+
     .leadership p {
         font-size: 20px;
         width: 90%;
         margin: auto;
-       
+
     }
-    
+
     .leaders-container {
         gap: 50px;
         margin-top: 80px;
     }
-    
+
     .leader-card {
         width: 240px;
         height: 280px;
     }
-    
+
     .leader-card img {
         width: 240px;
     }
-    
+
     .leader-card p {
         font-size: 18px;
     }
-    
+
     .leader-card h3 {
         font-size: 22px;
     }
-    
+
 
 }
 
@@ -1209,8 +1240,8 @@ body {
     word-spacing: 4px;
 
 
-    max-height: 125px;          
-    overflow: hidden;  
+    max-height: 125px;
+    overflow: hidden;
 }
 
 .read-more {
@@ -1245,11 +1276,11 @@ body {
 
 
 @media (max-width: 768px) {
-    
+
     .blog-container {
         margin-top: 180px;
     }
-    
+
     .blog-container h2 {
         font-size: 30px;
     }
@@ -1287,10 +1318,8 @@ body {
         max-height: none;
         overflow: visible;
         text-align: justify;
-
-
-        max-height: 125px;          
-        overflow: hidden; 
+        max-height: 125px;
+        overflow: hidden;
     }
 
     .read-more {
@@ -1299,6 +1328,21 @@ body {
         width: 100px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1330,15 +1374,18 @@ body {
 
 @media (max-width: 768px) {
     .diagonal {
-        width: 100%;
-        height: 300px;
+        width: 90%;
+        height: 100px;
         clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
         border-top-left-radius: 100px;
-        left: 0;
-        top: auto;
+        top: 90px;
         position: relative;
+        
     }
 }
+
+
+
 
 
 
@@ -1457,6 +1504,91 @@ body {
 .social-media img {
     width: 40px;
 }
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-top-left-radius: 100px;
+        padding-top: 60px;
+        clip-path: polygon(0% 1%, 100% 0%, 100% 100%, 0% 100%);
+
+    }
+
+    .footer .address,
+    .footer .nav,
+    .footer .com,
+    .footer .social-media {
+        width: 80%;
+        padding: 10px 0;
+        margin-top: 20px;
+    }
+
+
+    .footer .address  {
+        margin-top: -20px;
+        width: 80%;
+    }
+
+.icons-footer {
+    text-align: left;
+}
+
+    .footer .social-media ul {
+        width: 100%;
+        gap: 10px;
+    }
+
+
+    .footer .nav , .com ul  {
+        text-align: left;
+        width: 80%;
+        padding-left: 25%;
+    }
+
+    .footer .social-media h3 {
+        margin-left: 0;
+    }
+
+    .croped img {
+        width: 80px;
+        height: 60px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
