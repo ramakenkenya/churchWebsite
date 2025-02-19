@@ -296,55 +296,43 @@ body {
     background: white;
     opacity: 0.5;
 }
-
 @media (max-width: 768px) {
     .oval-container {
         width: 90%;
-        /* Make it more fluid for smaller screens */
         height: auto;
-        /* Allow it to adjust dynamically */
         flex-direction: column;
-        /* Stack elements vertically */
-        padding: 20px;
+        padding: 1.25rem; /* Converted 20px to rem */
         text-align: center;
-        /* Center content */
-        margin-top: 20px;
-        /* Adjust spacing */
+        margin-top: 1.25rem; /* Converted 20px to rem */
     }
 
     .location-info,
     .service-time {
         width: 100%;
-        /* Make them full width */
         text-align: center;
-        /* Center align text */
-        padding: 10px 0;
+        padding: 0.625rem 0; /* Converted 10px to rem */
     }
 
     .divider {
         width: 70%;
-        /* Make the divider horizontal */
-        height: 2px;
-        margin: 10px auto;
-        /* Center it */
+        height: 0.125rem; /* Converted 2px to rem */
+        margin: 0.625rem auto; /* Converted 10px to rem */
     }
 
     .oval-container .service-time h2,
     .oval-container .location-info h2 {
-        font-size: 22px;
-        /* Reduce heading size */
-        gap: 5px;
-        /* Adjust spacing between image and text */
+        font-size: 1.375rem; /* Converted 22px to rem */
+        gap: 0.3125rem; /* Converted 5px to rem */
     }
 
     .location-info p,
     .service-time p {
-        font-size: 13px;
-        /* Slightly reduce font size */
+        font-size: 0.8125rem; /* Converted 13px to rem */
         padding-left: 0;
-        line-height: 25px;
+        line-height: 1.5625rem; /* Converted 25px to rem */
     }
 }
+
 
 
 
