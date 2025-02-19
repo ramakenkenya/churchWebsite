@@ -178,50 +178,44 @@ body {
 
 @media (max-width: 768px) {
     .hero {
-        height: auto;
-        /* Allow height to adjust dynamically */
-        padding: 50px 20px;
+        height: auto; /* Adjust height dynamically */
+        padding: 2rem 1rem; /* Add padding for spacing */
+        text-align: center; /* Center align text */
+        background-position: center;
     }
 
     .hero-content {
-        margin-left: 0;
-        text-align: center;
-        /* Center align text for smaller screens */
-        margin-top: -40px;
+        margin-left: 0; /* Remove fixed margin */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .hero-content h1 {
-        font-size: 28px;
-        /* Reduce font size */
-        padding-top: 50px;
+        font-size: 1.2rem; /* Scalable text size */
+        padding-top: 2rem; /* Adjust spacing */
     }
 
     .hero-content p {
-        font-size: 12px;
-        /* Slightly reduce paragraph font size */
-        width: 100%;
-        /* Ensure it fits smaller screens */
-        max-width: 350px;
-        margin: 0 auto;
-        /* Center paragraph */
-        padding-top: 30px;
+        font-size: 0.5rem;
+        padding-top: 1.5rem;
+        width: 90%; /* Make text more flexible */
+        line-height: 0.8rem; /* Adjust spacing */
+        text-align: left;
     }
 
     .hero-content .join,
     .hero-content .watch {
-        width: 160px;
-        /* Reduce button width */
-        padding: 12px;
-        font-size: 11px;
-        /* Reduce font size */
-        margin-top: 30px;
-    }
-
-    .hero-content .watch {
-        margin-left: 10px;
-        /* Reduce spacing between buttons */
+        width: 40%; /* Make buttons full-width */
+        max-width: 250px; /* Limit max size */
+        padding: 0.75rem; /* Adjust padding */
+        font-size: 0.7rem;
+        margin-top: 1rem;
+        margin-left: 0; /* Remove left margin on Watch button */
+        color: white;
     }
 }
+
 
 
 
