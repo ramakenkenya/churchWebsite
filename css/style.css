@@ -846,11 +846,9 @@ body {
     color: #4d3f31;
     font-size: 13px;
     line-height: 25px;
-    word-spacing: 4px;
-
-
     max-height: 125px;
     overflow: hidden;
+    text-align: left;
 }
 
 .read-more {
@@ -903,8 +901,15 @@ body {
         width: 100%;
     }
 
+    .blog-post h3,
+    .blog-post p,
+    .read-more {
+        
+    }
     .blog-post h3 {
         font-size: 22px;
+        text-align: center;
+        margin-top: 1rem;
     }
 
     .blog-post p {
@@ -912,15 +917,17 @@ body {
         line-height: 22px;
         max-height: none;
         overflow: visible;
-        text-align: justify;
+        text-align: left;
         max-height: 125px;
         overflow: hidden;
+        margin: 0rem 1rem;
     }
 
     .read-more {
         font-size: 12px;
         padding: 8px 16px;
         width: 100px;
+        margin: 1rem;
     }
 }
 
