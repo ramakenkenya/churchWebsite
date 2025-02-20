@@ -443,7 +443,7 @@ body {
         flex-direction: column;
         gap: 30px;
         padding: 8vw;
-        padding-top: 32vw;
+        padding-top: 52vw;
     }
 
     .about {
@@ -453,13 +453,11 @@ body {
         font-size: 3vw;
         left: 43%;
         transform: translateX(-50%);
-       
     }
 
     .left-page img {
         width: 90%;
         height: auto;
-        display: none;
     }
 
     .right-page {
@@ -475,6 +473,10 @@ body {
     .right-page p,
     .right-page ul li {
         font-size: 2.5vw;
+    }
+
+    .right-page ul li {
+        text-align: left;
     }
 
     .reach {
