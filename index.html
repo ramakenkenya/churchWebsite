@@ -4,157 +4,306 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Church Website Header</title>
+    <meta name="description" content="Grace Community Church official website">
+    <meta name="keywords" content="Church, Worship, Community, Faith">
+    <meta name="author" content="Grace Community Church">
+    <title>Grace Community Church</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-
+   
 </head>
 
-
-
 <body>
-    <header class="header">
-        <img src="images/logo.png" alt="Church Logo">
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#ministries">Ministries</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#giving">Giving</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <header>
+        <div class="logo"><img src="images/1Logo.png" alt="Grace Community Church Logo"></div>
+        <div class="hamburger" onclick="toggleMenu(this)"><span></span><span></span><span></span></div>
+        <div class="menu-backdrop" id="menu-backdrop" onclick="closeMenu()"></div>
+        <nav id="nav-menu">
+            <a href="#about">ABOUT US</a>
+            <a href="#ministries">MINISTRIES</a>
+            <a href="#blogs">BLOGS</a>
+            <a href="#giving">GIVING</a>
+            <div class="mobile-cta">
+                <a href="#contact" class="cta-btn">Contact Us</a>
+            </div>
         </nav>
-        <div class="menu-toggle">☰</div>
+
+
+
+
+        <a href="#contact" class="cta-btn">Contact Us</a>
     </header>
-
     <section class="hero">
-        
-
-
-        <!--
-        <video autoplay muted loop>
-        <source src="images/rev father.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video> -->
-       
-
-        
-      
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <!--<h1>Welcome To Grace Community Church</h1>
-            <p>A place of love, faith, and hope for everyone.</p> 
-            -->
-
-            <h1>  Pentecostal Assemblies of God <br> <span
-                    class="sub-heading">- Mbale City Church</span></h1>
-            <p>Join us in worship and fellowship.</p>
-            <a href="#" class="cta-button">Plan Your Visit</a>
-        </div>
-    </section>
-
-  
-    <div class="oval-container">
-        <div class="location-info">
-            <h2>📍 Location</h2>
-            <p>Plot 6-7 Buginyanya Close, <br> Half London, Mbale, Uganda</p>
-        </div>
-        <div class="divider"></div>
-        <div class="service-time">
-            <h2>⏰ Service Time</h2>
-            <p>First Service: 7:30 AM – 9:45 AM <br> Second Service: 10:00 AM – 12:00 PM</p>
-        </div>
-    </div>
-
-    <section class="about-section">
-        <div class="book-container">
-            <!-- Left Page -->
-            <div class="left-page">
-                <h2>About Us</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it. 
-                    Lorem Ipsum is simply dummy text of the printing add some words.</p>
-            </div>
-
-            <!-- Right Page -->
-            <div class="right-page">
-                <h3>Vision</h3>
-                <p>A church with a holistic impact on the community.</p>
-
-                <h3>Mission</h3>
-                <p>Equip saints to cause holistic transformation by demonstrating the love and 
-                   power of Christ in the community of Mbale City and the surrounding areas.</p>
+            <h1><span class="highlight">Welcome To</span> <span>P.A.G</span><br><span class="highlight">MBALE City
+                    Church</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+            <div class="hero-buttons">
+                <a href="#worship" class="btn-primary">Join Our Worship</a>
+                <a href="#live" class="btn-secondary">Watch Live</a>
             </div>
         </div>
     </section>
 
 
-    <div class="group-1">
+    <section class="info-section">
+        <div class="info-block">
+            <img src="images/3Alarm.png" alt="Service Time Icon">
+            <div>
+                <h3>Service time</h3>
+                <p>First Service: 7:30 AM – 9:45 AM</p>
+                <p>Second Service: 10:00 AM – 12:00 PM</p>
+            </div>
+        </div>
+        <div class="info-block">
+            <img src="images/4Map.png" alt="Location Icon">
+            <div>
+                <h3>Location</h3>
+                <p>Plot 4–5 Graceway Close,</p>
+                <p>New Hope, Novara, Zora</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- Social Proof Section -->
-        <section class="social-proof">
-            <h2>Lives Transformed, Faith Strengthened</h2>
-            <p>Join thousands who have experienced God’s love through our ministry.</p>
 
+
+
+    <section id="about" class="about">
+        <div class="about-image">
+            <a class="about-header">About Us</a>
+            <img src="images/5About.png" alt="About Grace Community Church">
+        </div>
+        <div class="about-content">
+            <h2>Experience A Nurturing Environment At Grace Community Church</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+            <ul>
+                <li>Engage with diverse worship experiences that resonate</li>
+                <li>Access resources that inspire spiritual development</li>
+                <li>Join activities that connect you with our vibrant community</li>
+                <li>Stay informed with our comprehensive events calendar</li>
+            </ul>
+            <a href="#contact" class="btn-primary">Reach Out To Us</a>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="stats-content">
+            <div class="white-dot"></div>
+            <h2>Embrace A Transformative Community</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            
             <div class="stats-container">
-                <div class="stat-box">
-                    <h3>5,000+</h3>
-                    <p>Active Members</p>
+                <div class="stat-item">
+                    <img src="images/7People.png" alt="Members Icon" class="stat-icon">
+                    <div class="stat-number">5000+</div>
+                    <div class="stat-label">Active Members</div>
                 </div>
-                <div class="stat-box">
-                    <h3>30+</h3>
-                    <p>Years of Service</p>
+                
+                <div class="stat-divider"></div>
+                
+                <div class="stat-item">
+                    <img src="images/8Calendar.png" alt="Years Icon" class="stat-icon">
+                    <div class="stat-number">30+</div>
+                    <div class="stat-label">Years Of Service</div>
                 </div>
-                <div class="stat-box">
-                    <h3>100+</h3>
-                    <p>Outreach Programs</p>
+                
+                <div class="stat-divider"></div>
+                
+                <div class="stat-item">
+                    <img src="images/9Reach.png" alt="Outreach Icon" class="stat-icon">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Outreach Program</div>
                 </div>
             </div>
-
-            <div class="testimonials">
-                <p>"Grace Community Church has been a blessing to my family." - John D.</p>
-                <p>"A wonderful place to grow in faith and fellowship." - Mary K.</p>
-            </div>
-        </section>
-
-        <!-- Leadership Section -->
-        <section class="leadership">
-            <h2>Meet the Hearts Behind the Mission</h2>
-            <p>Faithful leaders guiding our community with love and wisdom.</p>
-
+        </div>
+    </section>
+    
+    <!-- Leadership Section -->
+    <section id="leadership" class="leadership-section">
+        <div class="container">
+            <h2 class="section-title">Meet The <span class="highlight">Hearts Behind</span> The Mission</h2>
+            <p class="section-subtitle">Faithful leaders guiding our community with love and wisdom</p>
+            
             <div class="leaders-container">
                 <div class="leader-card">
-                    <img src="images/pastor1.jpg" alt="">
-                    <h3>Magombe Stephen</h3>
-                    <p>Lead Pastor</p>
+                    <div class="leader-image">
+                        <img src="images/1Pastor.jpg" alt="Pastor John Wade">
+                    </div>
+                    <div class="leader-info">
+                        <span class="leader-title">Pastor</span>
+                        <h3 class="leader-name">John Wade</h3>
+                    </div>
                 </div>
+                
                 <div class="leader-card">
-                    <img src="images/pastor1.jpg" alt="Jane Smith">
-                    <h3>Jane Smith</h3>
-                    <p>Worship Director</p>
+                    <div class="leader-image">
+                        <img src="images/2Pastor.jpg" alt="Pastor Jane Smith">
+                    </div>
+                    <div class="leader-info">
+                        <span class="leader-title">Worship Leader</span>
+                        <h3 class="leader-name">David Johnson</h3>
+                    </div>
                 </div>
+                
                 <div class="leader-card">
-                    <img src="images/youth-pastor1.jpg" alt="Mark Johnson">
-                    <h3>Mark Johnson</h3>
-                    <p>Youth Pastor</p>
+                    <div class="leader-image">
+                        <img src="images/3Pastor.jpg" alt="Pastor David Johnson">
+                    </div>
+                    <div class="leader-info">
+                        <span class="leader-title">Youth Pastor</span>
+                        <h3 class="leader-name">Jane Smith</h3>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+    
+    <!-- Blog Section -->
+    <section id="blogs" class="blog-section">
+        <h2 class="blog-title">Stay Connected</h2>
+        <p class="blog-subtitle">Church News, Sermons, Testimonies & More</p>
+        
+        <div class="blog-carousel-container">
+            <div class="blog-carousel">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/Blog1.jpg" alt="40 days prayer and fasting">
+                    </div>
+                    <div class="blog-content">
+                        <h3>40 days prayer and fasting</h3>
+                        <p>dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/Blog2.jpg" alt="God's Faithfulness in my life">
+                    </div>
+                    <div class="blog-content">
+                        <h3>God's Faithfulness in my life</h3>
+                        <p>dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/Blog3.jpg" alt="Understanding God's Grace">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Understanding God's Grace</h3>
+                        <p>dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/Blog4.jpg" alt="Community Outreach Results">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Community Outreach Results</h3>
+                        <p>dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+                
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/Blog5.jpg" alt="Youth Conference 2025">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Youth Conference 2025</h3>
+                        <p>dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="images/13Logo.png" alt="Grace Community Church Logo">
+                </div>
+                <p class="footer-tagline">A welcoming community dedicated to sharing God's love and serving our neighbours in faith and worship.</p>
+                <div class="footer-contact">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <img src="images/14Phone.png" alt="Phone Icon">
+                        </div>
+                        <p>+ 254 123 456 789</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <img src="images/15mail.png" alt="Email Icon">
+                        </div>
+                        <p>support@gracecommunitychurch.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <img src="images/16Location.png" alt="Location Icon">
+                        </div>
+                        <p>456 Faith Ave, Hope City, Zora</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-center">
+                <h3 class="footer-heading">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#ministries">Ministries</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#sermons">Sermons</a></li>
+                    <li><a href="#giving">Giving</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-community">
+                <h3 class="footer-heading">Our Community</h3>
+                <ul class="footer-links">
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+                
+            <div class="footer-social">
+                <h3 class="footer-heading">Follow us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><img src="images/17Facebook.png" alt="Facebook"></a>
+                    <a href="#" class="social-icon"><img src="images/18Instagram.png" alt="Instagram"></a>
+                    <a href="#" class="social-icon"><img src="images/19Twitter.png" alt="Twitter"></a>
+                    <a href="#" class="social-icon"><img src="images/20Email.png" alt="Email"></a>
+                    <a href="#" class="social-icon"><img src="images/21Youtube.png" alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-divider"></div>
+        
+        <div class="footer-copyright">
+            <p>© 2025 Grace Community Church. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-    </div>
 
-
-    <script>
-        document.querySelector('.menu-toggle').addEventListener('click', function () {
-            document.querySelector('.nav-links').classList.toggle('active');
-        });
-    </script>
-
-
+    <script src="script.js" type="text/javascript"></script>
+ 
 </body>
 
 </html>
